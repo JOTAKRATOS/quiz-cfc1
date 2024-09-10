@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz CFC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quiz do Exame de Suficiência CFC</h1>
+
+    <!-- Seção de Seleção da Disciplina -->
+    <div id="filter">
+        <label for="disciplinaSelect">Escolha a disciplina:</label>
+        <select id="disciplinaSelect">
+            <option value="">Selecione uma disciplina</option>
+            <option value="Contabilidade Geral">Contabilidade Geral</option>
+            <option value="Legislação Tributária">Legislação Tributária</option>
+            <!-- Adicione mais opções de disciplinas -->
+        </select>
+        <button id="startQuiz">Iniciar Quiz</button>
+    </div>
+
+    <!-- Seção do Quiz -->
+    <div id="quiz" style="display:none;">
+        <div id="question"></div>
+        <div id="choices"></div>
+        <button id="nextQuestion" style="display:none;">Próxima</button>
+    </div>
+
+    <!-- Seção de Resultado -->
+    <div id="score" style="display:none;">
+        <h2>Você acertou <span id="correct"></span> de <span id="total"></span>!</h2>
+        <button id="restartQuiz">Voltar para a página inicial</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
